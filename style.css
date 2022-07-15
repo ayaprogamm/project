@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(255, 189, 8),rgb(233, 192, 59));
+}
+#logobox{
+width: 30%;
+height: 100%;
+float: right;
+background-color: rgb(255, 255, 255);
+}
+
+#hed{
+    float: left;
+    line-height: 100px;
+    padding: 0 15px;
+    color: rgb(5, 5, 5);
+}
+#logo{
+    height: 100%;
+    border-radius: 70%;
+}
+header a{
+    color: black;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: inline-block;
+
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 230px;
+    font-size: larger;
+    text-align: center;
+}
+nav a:hover{
+    background-color: white;
+    color: blue;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(44, 107, 243);
+    border-top: 3px solid aliceblue;
+    animation-name:changback ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+aside{
+width: 30%;
+height: 100%;
+background-color: aliceblue;
+float: left;
+}
+aside img{
+    width: 90%;
+    text-align: center;
+}
+#h2Aside{
+    padding: 20px 0;
+    border-bottom: 2px solid rgb(83, 119, 238);
+    text-align: center;
+}
+#article{
+    float: right;
+    width: 70%;
+    background-color: rgb(248, 223, 112);
+    height: 450px;
+    position: relative;
+    animation:changback ;
+    animation-duration: 5s;
+
+}
+#box{
+    padding: 15px;
+    position: absolute;
+    width: 400px;
+    height: 180px;
+background-color: rgb(255, 255, 255);
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+#box h2{
+    border-bottom: 3px solid black;
+    padding: 15px 0;
+    text-align: center;
+}
+#box p{
+    font-family: 'Amiri', serif;
+    text-align: justify;
+    text-align: center;
+    padding: 10px;
+}
+#box p:hover{
+    
+    border-bottom: 2px solid black;
+}
+#counct-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+   
+}
+#counct-box img{
+    width: 45px;
+    border-bottom: 2px double blue;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+#counct-box img:hover{
+    width: 55px;
+    border-bottom: 2px solid black;
+    
+}
+footer{
+    width: 100%;
+    padding: 10px;
+    
+}
+footer button{
+    background-color: white;
+    border: none;
+    padding: 15px 10px;
+ display: inline;
+ 
+}
+
+#btn img{
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    max-width: 500px;
+    padding: 10px 4px;
+    margin: 3px 0px;
+    
+cursor: pointer;
+
+}
+
+
+
+
+@keyframes changback{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+    25%{
+        background-color: rgb(255, 241, 164);
+    }
+    50%{
+        background-color: rgb(120, 219, 226);
+    }
+    100%{
+        background-color: rgb(240, 194, 108);
+    }
+}
+@media only screen and (min-width:940px)and(max-width:1070px){
+    #logobox{
+        width: 35%;
+    } 
+    #article{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
+    }
+    
+}
+@media only screen and(max-width:940px)and(min-width:802px){
+
+ #logobox {
+    width: 40%;
+ }  
+}
+@media only screen and(max-width:801px){
+    header , main{
+        height: auto;
+    }
+    #logobox{
+        width: 100%;
+        text-align: center;
+    }
+    #hed,#logo{
+        float: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #article{
+        height: 230px;
+    }
+
+}
+@media only screen and(max-width:500px) {
+    nav li{
+        display:block;
+        width: 100%;
+    }
+    
+}
